@@ -27,7 +27,7 @@ export default class SearchApp extends React.Component {
         person["university"].toLowerCase().includes(this.state.searchTerm.toLowerCase());
     });
     return (
-      <div>
+      <div className="container">
         <Header />
         <Search handleSearch={this.handleSearch} />
         <Results filteredData={filteredData} />

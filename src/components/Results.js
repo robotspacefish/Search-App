@@ -6,8 +6,8 @@ const Results = (props) => {
     <section id="results">
       {
         props.filteredData.length>0 ? 
-          <table>
-            <thead>
+          <table id="results-table" className="table-sm table-bordered">
+            <thead className="thead-dark">
               <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -28,7 +28,7 @@ const Results = (props) => {
             </tbody>
           </table>
           :
-          <p>No matches</p>
+          <p id="no-matches">No matches</p>
       }
     </section>
   );
