@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from '../Search/Search';
 import Results from '../Results/Results';
 import JSON from '../../assets/MOCK_DATA.json';
+import './Main.css';
 
 class Main extends Component {
   constructor(props) {

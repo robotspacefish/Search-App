@@ -1,12 +1,13 @@
 import React from 'react';
 import Result from '../Result/Result';
+import './Results.css';
 
 const Results = (props) => {
   return (
-    <section id="results">
+    <section id="results" className="container">
       {
         props.filteredData.length>0 ? 
-          <table id="results-table" className="table-sm table-bordered">
+          <table id="results-table" className="table table-bordered table-hover">
             <thead className="thead-dark">
               <tr>
                 <th>First Name</th>
